@@ -1,0 +1,38 @@
+.header-container {
+    @include flexbetween;
+    padding: 2rem 8rem;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+
+    .logo {
+        height: 2.5rem;
+    }
+
+    .nav-links {
+        @include flexbetween;
+        font-size: 1.6rem;
+        color: #000;
+    }
+
+    .link-item:not(:last-child) {
+        margin: 0 3.65rem;
+    }
+    .link-item {
+       
+
+        .link.current {
+            font-weight: bold;
+        }
+    }
+}
+
+.header-container.light {
+    background: #fff !important;
+    box-shadow: 0 5px 20px rgba(70, 70, 70, 0.1);
+    padding: 1.5rem 8rem;
+}
+

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="218.777" height="35" viewBox="0 0 218.777 35">
+  <g id="Logo" transform="translate(-210 -40)">
+    <text id="DannyStudio" transform="translate(246.777 68)" fill="#a318d4" font-size="30" font-family="Raleway"><tspan x="0" y="0" fill="#000">Danny</tspan><tspan y="0" fill="#a318d4" font-family="Raleway-Bold, Raleway" font-weight="700">Studio</tspan></text>
+    <path id="camera" d="M27.555,38.028v15.5a2.584,2.584,0,0,1-2.583,2.583H2.583A2.584,2.584,0,0,1,0,53.527v-15.5a2.584,2.584,0,0,1,2.583-2.583H7.319l.662-1.771A2.58,2.58,0,0,1,10.4,32h6.754a2.58,2.58,0,0,1,2.416,1.674l.667,1.771h4.736A2.584,2.584,0,0,1,27.555,38.028Zm-7.319,7.75a6.458,6.458,0,1,0-6.458,6.458A6.463,6.463,0,0,0,20.235,45.777Zm-1.722,0a4.736,4.736,0,1,1-4.736-4.736A4.743,4.743,0,0,1,18.513,45.777Z" transform="translate(210 13)"/>
+  </g>
+</svg>
