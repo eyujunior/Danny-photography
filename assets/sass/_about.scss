@@ -1,37 +1,15 @@
-.about-container
+.about
 {
-    padding: 0rem 8rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 6rem;
     margin-bottom: 8rem;
-
-    .image
+    &-img
     {
-        width: 60rem;
-        height: 35rem;
+        display: none;
     }
 
-    p 
+    &-desc
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
         line-height: 1.5;
-        margin-bottom: 4rem;
     }
-
-    .icon-container
-    {
-        margin-top: 4rem;
-        display: flex;
-
-        .icon
-        {
-            background-color: $color-light-gray;
-            padding: 1rem;
-            width: 4rem;
-            height: 4rem;
-            margin-right: 2rem;
-        }
-    }
-
 }

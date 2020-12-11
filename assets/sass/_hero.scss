@@ -1,78 +1,32 @@
-.hero-container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    
+.hero
+{
+    margin-bottom: 6rem;
 
-    .col-2 {
-        background: url("../img/Desktop-hero.jpg");
+
+    .col-1
+    {
+        background: url('../img/Mob-hero.jpg');
         background-size: cover;
-        background-position: 50% 30%;
+        background-position: top;
+        height: 60vh;
+        width: 100%;
     }
 
-    .col-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: $color-light-gray;
-        padding: 0 10%;
+    .col-2
+    {
+        padding: 4rem 0;
     }
-    .heading-primary {
-        font-size: 5.5rem;
-        line-height: 1.2;
+
+    .heading-primary
+    {
         font-family: $title-font;
-        margin-bottom: 1.5rem;
         text-transform: uppercase;
-        color: $color-dark;
+        font-size: 4rem;
+        margin-bottom: 1rem;
     }
     .sub-title
     {
-        font-size: 2.5rem;
-        margin-bottom: 3.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
     }
-
-    
-}
-
-.btn
-{
-    cursor: pointer;
-    padding: 1rem 3rem;
-    font-family: $copy-font;
-    font-weight: bold;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: all .3s ease;
-    
-
-    &-purple
-    {
-        background:$color-gradient;
-        color: #ffffff;
-        border: 1px solid $color-primary;
-        margin-right: 1rem;
-        transition: background-color .5s ease-in;
-
-        &:hover
-        {
-            background: $color-gradient-reverse;
-        }
-    }
-
-    &-transparent
-    {
-        border: 1px solid #000;
-
-        &:hover
-        {
-            background-color: #fff;
-        }
-    }
-}
-
-.hero 
-{
-    position: relative;
 }
