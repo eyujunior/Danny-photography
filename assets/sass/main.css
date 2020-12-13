@@ -337,7 +337,6 @@ section {
 
 .testimonials .glider-item > *:not(:last-child) {
   margin-bottom: 2rem;
-  margin-right: 4rem;
 }
 
 .testimonials .glider-text {
@@ -375,26 +374,26 @@ section {
 }
 
 .footer-container {
-  padding: 3rem 8rem;
-  background-color: #EFEDEE;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
-}
-
-.footer-container .footer-col-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 3rem 4rem;
+  background-color: #EFEDEE;
+}
+
+.footer-container .footer-col-1 {
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .footer-container .footer-col-1 .bottom-logo {
@@ -411,7 +410,14 @@ section {
 }
 
 .footer-container .footer-col-2 {
-  padding: 0rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .footer-container .footer-col-2 .subscribe-title {
@@ -423,8 +429,9 @@ section {
 
 .footer-container .footer-col-2 .subscribe-input {
   padding: 1rem 1.5rem;
-  width: 65%;
+  width: 100%;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid #fff;
   background-color: #fff;
   font-size: 1.5rem;
@@ -439,13 +446,15 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer-container .footer-col-2 .subscribe-form button {
-  border: 0;
+  border: 3px solid #d65133;
+  background-color: #d65133;
+  color: #ffffff;
 }
 
 .footer-container .footer-col-2 .subscribe-form button:focus {
@@ -468,6 +477,13 @@ section {
 }
 
 @media screen and (min-width: 800px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 3rem 8rem;
+  }
   .hero {
     padding: 0;
   }
@@ -508,7 +524,7 @@ section {
             justify-content: center;
     background: #EFEDEE;
     padding: 0 5% 0 5.8%;
-    width: 75%;
+    width: 70%;
     margin-top: 9rem;
   }
   .hero-container .col-2 .heading-primary {
@@ -568,6 +584,9 @@ section {
   .line {
     margin-bottom: 8rem !important;
   }
+}
+
+@media screen and (min-width: 1000px) {
   .about .content {
     display: -webkit-box;
     display: -ms-flexbox;

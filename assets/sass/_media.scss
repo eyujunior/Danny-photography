@@ -1,6 +1,12 @@
 @media screen and (min-width: 800px)
 {
 
+   .footer-container
+   {
+       flex-direction: row;
+       padding: 3rem 8rem;
+   }
+
     .hero 
     {
         padding: 0;
@@ -30,7 +36,7 @@
             justify-content: center;
             background: $color-light-gray;
             padding: 0 5% 0 5.8%;
-            width: 75%;
+            width: 70%;
             margin-top: 9rem;
            
 
@@ -110,28 +116,33 @@
     margin-bottom: 8rem !important;
 }
    
-.about
+
+
+}
+@media screen and (min-width:1000px)
 {
-
-    .content
+    .about
     {
-        display: flex;
-        justify-content: space-between;
-       
-       
-        .col-2
+    
+        .content
         {
-            margin-left: 4rem;
-
-            .about-desc
+            display: flex;
+            justify-content: space-between;
+           
+           
+            .col-2
             {
-                font-size: 1.7rem;
+                margin-left: 4rem;
+    
+                .about-desc
+                {
+                    font-size: 1.7rem;
+                }
             }
         }
+        &-img
+        {
+            display: block;
+        }
     }
-    &-img
-    {
-        display: block;
-    }
-}
 }
