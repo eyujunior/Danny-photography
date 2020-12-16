@@ -67,3 +67,36 @@ document.querySelectorAll(".btn").forEach((element) => {
 gsap.from('.col-2', {opacity:0, height:10, duration: 2});
 gsap.from('.col-1', {opacity:0, y:200, duration: 2});
 gsap.from('.header', {opacity:0, duration: 2, delay: 1});
+
+
+
+window.sr = ScrollReveal();
+
+
+sr.reveal('.animate-left', {
+    origin: 'left',
+    duration: 1000,
+    distance: '25rem',
+    delay: 300
+});
+
+sr.reveal('.animate-right', {
+    origin: 'right',
+    duration: 1000,
+    distance: '25rem',
+    delay: 300
+});
+
+sr.reveal('.animate-top', {
+    origin: 'top',
+    duration: 1000,
+    distance: '25rem',
+    delay: 400
+});
+
+sr.reveal('.animate-bottom', {
+    origin: 'bottom',
+    duration: 1000,
+    distance: '25rem',
+    delay: 400
+});
